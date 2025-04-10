@@ -308,6 +308,11 @@ ul, ol {
     min-width: 300px;
 }
 
+.logo-link {
+    font-weight: 600;
+    font-size: 24px;
+}
+
 .hero-text h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
