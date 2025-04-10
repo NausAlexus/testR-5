@@ -1,4 +1,5 @@
 
+
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -35,6 +36,7 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+    --white: #FFFFFF;
 
     /* Custom Colors */
     --primary-color: #2C3E50;
@@ -1552,4 +1554,155 @@ ul, ol {
         width: 100%;
         margin-bottom: 1rem;
     }
+}
+.contact-form-block {
+    max-width: 1200px;
+    margin: 100px auto 50px;
+    padding: 2rem;
+}
+
+.contact-form-container {
+    display: flex;
+    gap: 2rem;
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.form-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.form-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-content {
+    flex: 1;
+    padding: 2rem;
+    background: rgb(70, 69, 69);
+    color: var(--white);
+}
+
+.form-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--white);
+}
+
+.form-content input,
+.form-content textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    transition: var(--transition);
+}
+
+.form-content input::placeholder,
+.form-content textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-content input:focus,
+.form-content textarea:focus {
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+}
+
+.form-content label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--white);
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.checkbox input {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    margin-right: 0.5rem;
+}
+
+.checkbox label {
+    margin: 0;
+}
+
+.checkbox label a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.checkbox label a:hover {
+    color: var(--accent-color);
+}
+
+.form-content button {
+    width: 100%;
+    padding: 1rem;
+    background: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: var(--transition);
+}
+
+.form-content button:hover {
+    background: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+/* Адаптивность для контактной формы */
+@media (max-width: 768px) {
+    .contact-form-container {
+        flex-direction: column;
+    }
+    
+    .form-image {
+        min-width: 100%;
+        height: 200px;
+    }
+    
+    .form-content {
+        padding: 1.5rem;
+    }
+    
+    .form-content h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
+.faq-answer {
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+
+
+.content-block-sections {
+    display: none;
+}
+
+.content-block-sections.active {
+    display: block;
 }

@@ -51,111 +51,59 @@
             </div>
         </section>
 
-        <!-- Contact Information Section -->
-        <section class="contact-info-section">
-            <div class="container">
-                <div class="contact-grid">
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <h3>Email Us</h3>
-                        <p>Our support team typically responds within 24 hours</p>
-                        <a href="mailto:support@mastermatchplay.com" class="contact-link">support@mastermatchplay.com</a>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-headset"></i>
-                        </div>
-                        <h3>In-App Support</h3>
-                        <p>Get help directly through our mobile app</p>
-                        <a href="#download" class="contact-link">Download the App</a>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-comments"></i>
-                        </div>
-                        <h3>Community Forum</h3>
-                        <p>Connect with other players and find answers</p>
-                        <a href="#" class="contact-link">Visit the Forum</a>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-globe"></i>
-                        </div>
-                        <h3>Social Media</h3>
-                        <p>Follow us and send messages on our channels</p>
-                        <div class="social-links">
-                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- Contact Form Section -->
-        <section class="contact-form-section">
-            <div class="container">
-                <div class="two-column-layout">
-                    <div class="column-content">
-                        <div class="section-header text-left">
-                            <h2>Send Us a Message</h2>
-                            <p>We'd love to hear from you</p>
+        <section id="form" class="contact-form-block">
+            <div class="contact-form-container">
+                <div class="form-image">
+                    <img src="img/contact.jpg" alt="Contact Us" />
+                </div>
+
+                <div class="form-content">
+                    <h1 class="whiteText">Leave Your Request</h1>
+                    <form action="/thanks_form.php" method="post">
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                            required
+                        />
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        />
+
+                        <label for="message">Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Enter your comment"
+                            rows="5"
+                            required
+                        ></textarea>
+
+                        <div class="checkbox">
+                            <input
+                                type="checkbox"
+                                id="privacy-policy"
+                                value="on"
+                                name="privacy"
+                                required
+                            />
+                            <label for="privacy-policy">
+                                I agree to the
+                                <a href="privacy-policy.html"
+                                    >Privacy Policy</a
+                                >
+                            </label>
                         </div>
-                        <form id="contactForm" class="contact-form">
-                            <div class="form-group">
-                                <label for="name">Your Name</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email Address</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <select id="subject" name="subject" required>
-                                    <option value="" disabled selected>Select a topic</option>
-                                    <option value="general">General Inquiry</option>
-                                    <option value="support">Technical Support</option>
-                                    <option value="feedback">Game Feedback</option>
-                                    <option value="tournaments">Tournament Questions</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Your Message</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label class="checkbox-container">
-                                    <input type="checkbox" id="privacy" name="privacy" required>
-                                    <span class="checkmark"></span>
-                                    I agree to the <a href="privacy-policy.html">Privacy Policy</a>
-                                </label>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </form>
-                    </div>
-                    <div class="column-image">
-                        <div class="contact-image-container">
-                            <img src="images/contact-illustration.jpg" alt="Customer Support Illustration">
-                            <div class="contact-card-overlay">
-                                <div class="overlay-content">
-                                    <h3>We're Here to Help</h3>
-                                    <p>Our team of rummy enthusiasts is ready to assist you with any questions or issues you might have.</p>
-                                    <ul class="contact-features">
-                                        <li><i class="fas fa-check-circle"></i> Fast Response Times</li>
-                                        <li><i class="fas fa-check-circle"></i> Knowledgeable Support Team</li>
-                                        <li><i class="fas fa-check-circle"></i> 24/7 In-App Assistance</li>
-                                        <li><i class="fas fa-check-circle"></i> Comprehensive Solutions</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        <button type="submit">Submit</button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -195,42 +143,8 @@
             </div>
         </section>
 
-        <!-- Feedback Section -->
-        <section class="feedback-section">
-            <div class="container">
-                <div class="feedback-container">
-                    <div class="section-header">
-                        <h2>We Value Your Feedback</h2>
-                        <p>Help us improve MasterMatchPlay with your suggestions</p>
-                    </div>
-                    <p class="feedback-text">Your feedback is essential in helping us create the best possible rummy experience. Whether you have suggestions for new features, improvements to existing gameplay, or ideas for tournaments, we want to hear from you!</p>
-                    <a href="#download" class="btn btn-primary">Share Your Ideas</a>
-                </div>
-            </div>
-        </section>
 
-        <!-- Download Section -->
-        <section class="download-section" id="download">
-            <div class="container">
-                <div class="download-content">
-                    <div class="download-text">
-                        <h2>Get In Touch Directly</h2>
-                        <p>Download MasterMatchPlay for easy access to our in-app support.</p>
-                        <div class="app-buttons">
-                            <a href="#" class="app-btn">
-                                <img src="images/app-store.png" alt="Download on App Store">
-                            </a>
-                            <a href="#" class="app-btn">
-                                <img src="images/google-play.png" alt="Get it on Google Play">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="download-image">
-                        <img src="images/app-showcase.png" alt="MasterMatchPlay App Showcase">
-                    </div>
-                </div>
-            </div>
-        </section>
+
     </main>
 
     <footer class="footer">
