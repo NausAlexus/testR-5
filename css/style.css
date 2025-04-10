@@ -103,7 +103,7 @@ button, input, textarea, select {
     width: 100%;
     max-width: var(--container-max-width);
     margin: 0 auto;
-    padding: 0 var(--container-padding);
+    padding: 10px;
 }
 
 /* Header */
@@ -202,7 +202,7 @@ button, input, textarea, select {
 }
 
 .btn-primary {
-    background-color: var(--primary-color);
+    background-color: #3498DB;
     color: var(--white);
 }
 
@@ -624,6 +624,9 @@ button, input, textarea, select {
 .app-btn{
     color: rgb(132, 132, 242);
 }
+.champions-section, .tournament-format-section{
+    margin-top: 30px;
+}
 
 /* Footer */
 .footer {
@@ -711,19 +714,19 @@ button, input, textarea, select {
 
 /* Page Header */
 .page-header {
-    background-color: white;
-    color: black;
+    background-color: rgb(248, 247, 247);
+    color: #2C3E50;
     padding: 4rem 0;
     text-align: center;
 }
 
 .page-header h1 {
-    color: black;
+    color: #2C3E50;
     margin-bottom: 0.5rem;
 }
 
 .page-header p {
-    color: black;
+    color: #2C3E50;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -1300,6 +1303,12 @@ button, input, textarea, select {
     border-radius: 50%;
     overflow: hidden;
     border: 2px solid var(--white);
+}
+.user-avatar img{
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+
 }
 
 .user-avatar.staff {
@@ -1885,7 +1894,7 @@ button, input, textarea, select {
         font-size: 1.7rem;
     }
 
-    .main-nav {
+    .main-nav, .download-btn-wrapper {
         display: none;
     }
 
