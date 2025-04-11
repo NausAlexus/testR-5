@@ -1979,3 +1979,16 @@ button, input, textarea, select {
 .mobile-menu-active .mobile-menu-toggle span:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
 }
+
+
+
+.gam{
+    display: flex; margin-top: 20px; align-items: center; gap: 10px; justify-content: center;
+  }
+  .cirle{
+    color: white; background-color: red; border-radius: 100%; padding: 15px;font-size: 20px; font-weight: 700;
+
+  }
+  .img18{
+    max-width: 70px;
+  }
