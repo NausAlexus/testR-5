@@ -1599,7 +1599,7 @@ ul, ol {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .main-nav, .download-btn-wrapper {
         display: none;
     }
@@ -1818,4 +1818,7 @@ ul, ol {
   }
   .img18{
     max-width: 70px;
+  }
+  .whiteText{
+    color: white;
   }
