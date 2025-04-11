@@ -1807,3 +1807,15 @@ ul, ol {
 .content-block-sections.active {
     display: block;
 }
+
+
+.gam{
+    display: flex; margin-top: 20px; align-items: center; gap: 10px; justify-content: center;
+  }
+  .cirle{
+    color: white; background-color: red; border-radius: 100%; padding: 15px;font-size: 20px; font-weight: 700;
+
+  }
+  .img18{
+    max-width: 70px;
+  }
